@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "accounts/base.html" %}
+{% load bootstrap3 %}
+  {% block body_block %}
+{% load staticfiles %}
+
+<div class="container">
+  <h1>tourism</h1>
+  <h2>choose your place</h2>
+  <a href="{% url 'accounts:tamilnadu' %}"><img src="{% static "images/tamilnadu.jpg" %}" alt="tamilnadu"></a>
+  <a href="{% url 'accounts:bihar' %}"><img src="{% static "images/bihar.jpg" %}" alt="bihar"></a>
+  <a href="{% url 'accounts:karnataka' %}"><img src="{% static "images/karnataka.jpg" %}" alt="karnataka"></a>
+  <a href="{% url 'accounts:up' %}"><img src="{% static "images/up.jpg" %}" alt="up"></a>
+  <a href="{% url 'accounts:jammukashmir' %}"><img src="{% static "images/jammukashmir.jpg" %}" alt="rose"></a>
+
+
+</div>
+<br>
+<form action="{% url 'accounts:my_function' %}">
+<textarea name="fulltextarea" cols=40 rows=10></textarea>
+<br />
+<input type="submit" value="fetch data!"/>
+</form>
+{% endblock %}

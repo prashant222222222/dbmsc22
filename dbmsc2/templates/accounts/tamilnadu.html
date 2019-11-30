@@ -1,0 +1,14 @@
+
+  <!DOCTYPE html>
+    {% extends 'accounts/base4.html' %}
+  {% load staticfiles %}
+
+    {% block body_block %}
+
+        <h2>APPROX. VISITORS IN 1ST QUARTER NEXT YEAR={{ POP }}</h2>
+          <h2>APPROX. VISITORS IN 2ND QUARTER NEXT YEAR={{ POP1 }}</h2>
+            <h2>APPROX. VISITORS IN 3RD QUARTER NEXT YEAR={{ POP2 }}</h2>
+              <h2>APPROX. VISITORS IN 4TH QUARTER NEXT YEAR={{ POP3 }}</h2>
+              <br>
+      <h3><a href="{% url 'accounts:users' %}" alt="tamilnadu">GIVE US FEEDBACK</a></h3>
+    {% endblock %}

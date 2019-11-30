@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'appurl/base.html' %}
+{% load staticfiles %}
+  {% block body_block %}
+    <h1>tourism</h1>
+    <h2>choose your place</h2>
+    <img src="{% static "images/download.jpg" %}" alt="rose">
+    <a href="{% url 'appurl:bihar' %}"><img src="{% static "images/up.jpg" %}" alt="rose"></a>
+    <a href="{% url 'appurl:bihar' %}"><img src="{% static "images/bihar.jpg" %}" alt="rose"></a>
+  {% endblock %}

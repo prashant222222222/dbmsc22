@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% block content %}
+
+    <form action= "{% url "accounts:thanks" %}"  method="POST" >
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit"  name="" value="submit">
+    </form>
+{% endblock %}
